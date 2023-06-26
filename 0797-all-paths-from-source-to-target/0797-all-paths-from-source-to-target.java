@@ -9,6 +9,8 @@ class Solution {
         dfs(path,0);
         return ans;
     }
+    //Depth first traversal approach is used
+    //Keep traversing node by node and note down the path and keep backtracking the path
     public void dfs(List<Integer> path,int node){
         if(node==graph.length-1){
             ans.add(new ArrayList(path));
